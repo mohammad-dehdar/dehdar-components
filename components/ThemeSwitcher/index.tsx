@@ -5,7 +5,7 @@ import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Moon, Sun } from "lucide-react"
 
-export default function ThemeSlider() {
+export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 

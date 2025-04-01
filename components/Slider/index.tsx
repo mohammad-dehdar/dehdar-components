@@ -86,8 +86,8 @@ export default function ModernSlider() {
         <span className="sr-only">Previous slide</span>
       </button>
 
-      <button className="swiper-button-next absolute top-1/2 right-4 z-10 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full  opacity-0 group-hover:opacity-100 transition-all px-5 duration-300 hover:scale-150">
-        <ChevronRight className="w-6 h-6" />
+      <button className="swiper-button-next text-red-300 absolute top-1/2 right-4 z-10 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full  opacity-0 group-hover:opacity-100 transition-all px-5 duration-300 hover:scale-150">
+        <ChevronRight className="w-6 h-6"/>
         <span className="sr-only">Next slide</span>
       </button>
 

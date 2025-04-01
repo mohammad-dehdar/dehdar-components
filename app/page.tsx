@@ -1,44 +1,89 @@
-import Navbar from "@/components/Navbar";
-import ModernSlider from "@/components/Slider";
+import Hero from "@/components/Hero"
+import Navbar from "@/components/Navbar"
 
-
+// Sample navigation items
 const navItems = [
   {
-    label: "Home",
-    link: "#",
+    label: "Features",
+    link: "#features",
   },
   {
-    label: "Products",
+    label: "Courses",
+    link: "#courses",
     subItems: [
-      { label: "Product 1", link: "#product1" },
-      { label: "Product 2", link: "#product2" },
-      { label: "Product 3", link: "#product3" },
+      {
+        label: "Forex",
+        link: "#forex",
+      },
+      {
+        label: "Crypto",
+        link: "#crypto",
+      },
+      {
+        label: "Stocks",
+        link: "#stocks",
+      },
+      {
+        label: "Indices",
+        link: "#indices",
+      },
     ],
   },
   {
-    label: "Services",
+    label: "Resources",
+    link: "#resources",
     subItems: [
-      { label: "Service 1", link: "#service1" },
-      { label: "Service 2", link: "#service2" },
+      {
+        label: "Documentation",
+        link: "#documentation",
+      },
+      {
+        label: "API Reference",
+        link: "#api",
+      },
+      {
+        label: "Tutorials",
+        link: "#tutorials",
+      },
     ],
+  },
+  {
+    label: "Pricing",
+    link: "#pricing",
   },
   {
     label: "About",
     link: "#about",
   },
-  {
-    label: "Contact",
-    link: "#contact",
-  },
 ]
 
 export default function Home() {
   return (
-    <>
-      <Navbar items={navItems} brand={"Fariborz Rajabi"}/>
-      <div>
-      <ModernSlider/>
+    <main className="min-h-screen">
+      <Navbar items={navItems} brand="RAJABI" />
+
+      {/* Content with padding for the navbar */}
+      <div className="pt-24">
+        {/* Hero Section */}
+        <Hero
+          title="Advanced Trading Platform"
+          description="Unlock the power of advanced trading with our institutional-grade indicators and tools."
+          earlyAccessText="Get Early Access"
+          earlyAccessLink="#early-access"
+          joinNowText="Join Now"
+          joinNowLink="#join-now"
+        />
+
+        {/* Chart Section */}
+        <section className="w-full max-w-6xl mx-auto px-6 pb-20">
+          <div className="w-full h-[400px] rounded-xl overflow-hidden">
+            <div className="w-full h-full bg-gray-100 dark:bg-black/60 flex items-center justify-center">
+              <p className="text-muted-foreground">Trading chart visualization goes here</p>
+            </div>
+          </div>
+        </section>
       </div>
-    </>
-  );
+    </main>
+  )
 }
+
