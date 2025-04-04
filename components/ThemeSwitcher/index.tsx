@@ -19,7 +19,7 @@ export default function ThemeSwitcher() {
   const isDark = theme === "dark"
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center" dir="ltr">
       <button
         onClick={() => setTheme(isDark ? "light" : "dark")}
         className="relative h-8 w-16 rounded-full bg-gradient-to-r from-blue-100 to-yellow-100 dark:from-indigo-900 dark:to-gray-900 p-1 transition-colors duration-300"
@@ -60,4 +60,3 @@ export default function ThemeSwitcher() {
     </div>
   )
 }
-
