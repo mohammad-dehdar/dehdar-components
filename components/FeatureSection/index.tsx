@@ -71,9 +71,9 @@ export default function FeatureSection({
   const IconComponent = LucideIcons[iconName] as LucideIcon
 
   return (
-    <section className="w-full py-16 md:py-24 overflow-hidden">
+    <section className="w-full md:w-2/3 py-16 mx-auto md:py-24 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-12 lg:gap-16`}>
+        <div className={`flex flex-col ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-center gap-8 md:gap-12 lg:gap-16`}>
           {/* Text Content */}
           <motion.div 
             className="w-full md:w-1/2 space-y-6"
@@ -119,7 +119,7 @@ export default function FeatureSection({
           
           {/* Icon Container */}
           <motion.div 
-            className="w-full md:w-1/2 flex justify-center"
+            className={`w-full  md:w-1/2 flex ${reversed ? 'md:justify-start' : 'md:justify-end'}`}
             initial={{ opacity: 0, x: reversed ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
