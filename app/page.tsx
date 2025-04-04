@@ -12,7 +12,7 @@ export default function Home() {
           Advanced Institutional Indicators
         </h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto mb-8 sm:mb-10 text-gray-600 dark:text-gray-300">
-          Trade in Forex, Cryptocurrencies, Index, and Stocks effortlessly. Our indicators identify 'bottoms' and 'tops'
+          Trade in Forex, Cryptocurrencies, Index, and Stocks effortlessly. Our indicators identify &apos;bottoms&apos; and &apos;tops&apos;
           thanks to advanced Artificial Intelligence, adapting and updating according to market trends, enhancing your
           profits.
         </p>

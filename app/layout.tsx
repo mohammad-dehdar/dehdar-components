@@ -5,9 +5,8 @@ import "./globals.css"
 import { ThemeProvider } from "next-themes"
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import Navbar from "@/components/Navbar"
-import AnimatedBackground from "@/components/Background/Animatedbackground"
 import WaveBackground from "@/components/Background/WaveBackground"
-import GridBackground from "@/components/Background/GridBackground"
+
 // Uncomment one of these to use a different background pattern
 // import GridBackground from "@/components/grid-background"
 // import WaveBackground from "@/components/wave-background"

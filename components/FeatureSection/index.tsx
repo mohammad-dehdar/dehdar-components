@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import * as LucideIcons from 'lucide-react'
+import { LucideIcon } from 'lucide-react'
 
 // Define the icon types we support (add more as needed)
 type IconName = keyof typeof LucideIcons
@@ -67,7 +68,7 @@ export default function FeatureSection({
   const actualIconColor = iconColor || defaultIconColor
 
   // Get the icon component from the name
-  const IconComponent = LucideIcons[iconName]
+  const IconComponent = LucideIcons[iconName] as LucideIcon
 
   return (
     <section className="w-full py-16 md:py-24 overflow-hidden">
@@ -140,7 +141,7 @@ export default function FeatureSection({
                 className="relative z-10"
               >
                 {IconComponent && (
-                  <IconComponent 
+                  <IconComponent
                     size={iconSize} 
                     color={actualIconColor} 
                     strokeWidth={1.5}
