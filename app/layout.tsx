@@ -6,6 +6,8 @@ import { ThemeProvider } from "next-themes"
 import ThemeSwitcher from "@/components/ThemeSwitcher"
 import Navbar from "@/components/Navbar"
 import AnimatedBackground from "@/components/Background/Animatedbackground"
+import WaveBackground from "@/components/Background/WaveBackground"
+import GridBackground from "@/components/Background/GridBackground"
 // Uncomment one of these to use a different background pattern
 // import GridBackground from "@/components/grid-background"
 // import WaveBackground from "@/components/wave-background"
@@ -76,7 +78,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="trading-platform-theme">
           <div className="min-h-screen transition-colors duration-300">
             {/* Animated Background */}
-            <AnimatedBackground />
+            <WaveBackground />
+            {/* <GridBackground /> */}
             {/* Uncomment one of these to use a different background pattern */}
             {/* <GridBackground /> */}
             {/* <WaveBackground /> */}
