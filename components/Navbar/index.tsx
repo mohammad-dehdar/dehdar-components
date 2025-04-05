@@ -82,7 +82,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { t, direction } = useLanguage()
+  const { direction } = useLanguage()
 
   // Check if we're on mobile when component mounts and when window resizes
   useEffect(() => {

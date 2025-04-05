@@ -156,21 +156,21 @@ export default function CryptoMarquee({
 }
 
 // Helper function to darken/lighten colors
-function adjustColor(hex: string, amount: number): string {
-  // Remove # if present
-  hex = hex.replace("#", "")
+// function adjustColor(hex: string, amount: number): string {
+//   // Remove # if present
+//   hex = hex.replace("#", "")
 
-  // Convert to RGB
-  const r = Number.parseInt(hex.substring(0, 2), 16)
-  const g = Number.parseInt(hex.substring(2, 4), 16)
-  const b = Number.parseInt(hex.substring(4, 6), 16)
+//   // Convert to RGB
+//   const r = Number.parseInt(hex.substring(0, 2), 16)
+//   const g = Number.parseInt(hex.substring(2, 4), 16)
+//   const b = Number.parseInt(hex.substring(4, 6), 16)
 
-  // Adjust
-  const adjustR = Math.max(0, Math.min(255, r + amount))
-  const adjustG = Math.max(0, Math.min(255, g + amount))
-  const adjustB = Math.max(0, Math.min(255, b + amount))
+//   // Adjust
+//   const adjustR = Math.max(0, Math.min(255, r + amount))
+//   const adjustG = Math.max(0, Math.min(255, g + amount))
+//   const adjustB = Math.max(0, Math.min(255, b + amount))
 
-  // Convert back to hex
-  return `#${adjustR.toString(16).padStart(2, "0")}${adjustG.toString(16).padStart(2, "0")}${adjustB.toString(16).padStart(2, "0")}`
-}
+//   // Convert back to hex
+//   return `#${adjustR.toString(16).padStart(2, "0")}${adjustG.toString(16).padStart(2, "0")}${adjustB.toString(16).padStart(2, "0")}`
+// }
 

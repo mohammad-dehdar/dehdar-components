@@ -2,7 +2,7 @@
 
 import { Sparkles, BarChart3, LineChart } from "lucide-react"
 import FeatureSection from "@/components/FeatureSection"
-import LogoMarquee from "@/components/CryptoMarquee/LogoMarquee"
+
 import { useLanguage } from "@/context/LanguageContext"
 
 export default function Home() {
